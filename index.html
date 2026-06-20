@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lampade artigianali da bottiglie Campari Soda</title>
+  <meta name="description" content="Lampade artigianali nate da autentiche bottiglie Campari Soda. Basi vintage recuperate e paralumi disegnati e stampati in 3D. Pezzi unici, spedizione in tutta Italia.">
+  <meta property="og:title" content="Lampade artigianali da bottiglie Campari Soda">
+  <meta property="og:description" content="Bottiglie Campari Soda autentiche, diventate luce. Pezzi artigianali e (quasi) unici.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%23BE1622'/><circle cx='16' cy='14' r='6' fill='%23FF7A45'/></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <a href="#top" class="brand" aria-label="Lampade Campari Soda, home">
+        <b>Lampade</b>
+        <span>Campari Soda · fatte a mano</span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navigazione principale">
+        <a href="#vetrina">Lampade</a>
+        <a href="#come-nascono">Come nascono</a>
+        <a href="#storia">Storia</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a class="btn btn-primary nav-cta" href="#contatti">Contattami</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Apri il menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <span class="glow" aria-hidden="true"></span>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Artigianato · Bottiglie Campari Soda</span>
+        <h1>La luce che sa<br><span class="accent">d'aperitivo</span>.</h1>
+        <p class="lead">Lampade artigianali nate da autentiche bottiglie Campari Soda. Recupero basi vintage e le vesto con un paralume disegnato e stampato in 3D: ogni pezzo è irripetibile.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#vetrina">Scopri le lampade</a>
+          <a class="btn btn-light" href="#come-nascono">Come nascono</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>100%</b><span>fatte a mano</span></div>
+          <div><b>1932</b><span>icona del design</span></div>
+          <div><b>Italia</b><span>spedizione ovunque</span></div>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/lamp-2.jpg" alt="Lampada accesa con paralume di bottiglie Campari Soda" width="1200" height="1600">
+      </figure>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scorri</span>
+      <span class="dot"></span>
+    </div>
+  </section>
+
+  <!-- ===================== COME NASCONO ===================== -->
+  <section class="section concept" id="come-nascono">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow center">Come nasce una lampada</span>
+        <h2 class="section-title">Tre passaggi, un pezzo unico</h2>
+        <p>Niente produzione in serie: ogni lampada è il punto d'incontro tra una base recuperata e un paralume progettato su misura.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal d1">
+          <div class="num">01</div>
+          <h3>Recupero la base</h3>
+          <p>Parto da lampade da comodino e ne tolgo il paralume. Le basi sono le più diverse — acciaio, ceramica, metallo — ognuna con la sua storia.</p>
+        </div>
+        <div class="step reveal d2">
+          <div class="num">02</div>
+          <h3>Progetto e stampo il paralume</h3>
+          <p>Disegno io la struttura e la stampo in 3D in PETG, un materiale resistente e affidabile, pensato per reggere le bottiglie.</p>
+        </div>
+        <div class="step reveal d3">
+          <div class="num">03</div>
+          <h3>Monto le Campari Soda</h3>
+          <p>Compongo le bottiglie autentiche attorno alla luce. Accese, diventano un caldo bagliore rosso inconfondibile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VETRINA ===================== -->
+  <section class="section" id="vetrina">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">La vetrina</span>
+        <h2 class="section-title">Le lampade disponibili</h2>
+        <p>Ogni lampada è fotografata accesa. Trovi quella giusta? Scrivimi: ti confermo disponibilità e spedizione.</p>
+      </div>
+      <div class="catalog-bar reveal">
+        <div class="filters" role="group" aria-label="Filtra le lampade">
+          <button class="active" data-filter="tutte">Tutte</button>
+          <button data-filter="disponibili">Disponibili</button>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="grid" id="grid"><!-- lampade generate da app.js --></div>
+    </div>
+  </section>
+
+  <!-- ===================== STORIA ===================== -->
+  <section class="section story" id="storia">
+    <div class="container story-grid">
+      <img class="reveal" src="images/lamp-1.jpg" alt="Vista dall'alto di una lampada: bottiglie Campari Soda disposte attorno alla luce" width="1200" height="1600">
+      <div class="reveal d1">
+        <span class="eyebrow">La storia</span>
+        <h2>Un'icona del 1932,<br>accesa di nuovo</h2>
+        <p>La bottiglietta conica della Campari Soda nasce nel 1932 dal genio futurista di Fortunato Depero: una delle prime bottiglie monodose della storia del design, rimasta identica per quasi un secolo.</p>
+        <p>Le mie lampade partono da bottiglie autentiche: nient'altro che vetro vero, recuperato e trasformato in luce. Un piccolo omaggio al design italiano — e all'ora dell'aperitivo.</p>
+        <p class="sign">— Enrico</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATTI ===================== -->
+  <section class="section" id="contatti">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="eyebrow">Parliamone</span>
+        <h2 class="section-title">Trova la tua lampada</h2>
+        <p style="margin-top:16px;color:var(--ink-soft);max-width:48ch">Scrivimi sul canale che preferisci: ti dico disponibilità, tempi e modalità di consegna.</p>
+
+        <div class="channels">
+          <a class="channel" href="https://wa.me/393428436314" target="_blank" rel="noopener">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.91zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></span>
+            <div><b>WhatsApp</b><span>342 843 6314 — risposta veloce</span></div>
+          </a>
+          <a class="channel" href="https://instagram.com/pantaoo" target="_blank" rel="noopener">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 01-1.38-.9 3.72 3.72 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.99.04-1.53.21-1.88.35-.47.18-.81.4-1.16.75-.35.35-.57.69-.75 1.16-.14.35-.31.89-.35 1.88-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.99.21 1.53.35 1.88.18.47.4.81.75 1.16.35.35.69.57 1.16.75.35.14.89.31 1.88.35 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.99-.04 1.53-.21 1.88-.35.47-.18.81-.4 1.16-.75.35-.35.57-.69.75-1.16.14-.35.31-.89.35-1.88.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.99-.21-1.53-.35-1.88a3.12 3.12 0 00-.75-1.16 3.12 3.12 0 00-1.16-.75c-.35-.14-.89-.31-1.88-.35-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.3 5.3 0 110 10.6 5.3 5.3 0 010-10.6zm0 1.62a3.68 3.68 0 100 7.36 3.68 3.68 0 000-7.36zm5.5-1.06a1.24 1.24 0 110 2.48 1.24 1.24 0 010-2.48z"/></svg></span>
+            <div><b>Instagram</b><span>@pantaoo — la galleria completa</span></div>
+          </a>
+          <a class="channel" href="mailto:enricopantaleoni10@gmail.com">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><b>Email</b><span>enricopantaleoni10@gmail.com</span></div>
+          </a>
+        </div>
+
+        <div class="delivery">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-8H4v8M1 13l11-9 11 9M9 21v-5h6v5"/></svg> Ritiro a mano in zona</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7M5.5 21a2 2 0 100-4 2 2 0 000 4zM18.5 21a2 2 0 100-4 2 2 0 000 4z"/></svg> Spedizione in tutta Italia</div>
+        </div>
+      </div>
+
+      <aside class="qr-card reveal d1">
+        <span class="eyebrow">Inquadra e sfoglia</span>
+        <div class="qr-box" id="qrcode" aria-label="QR code della vetrina"></div>
+        <p>Porta la vetrina sempre con te: stampa il QR per mercatini, fiere e biglietti da visita.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#top" class="brand">
+        <b>Lampade</b>
+        <span>Campari Soda · Enrico Pantaleoni</span>
+      </a>
+      <div class="social">
+        <a href="https://wa.me/393428436314" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.488-.91zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
+        <a href="https://instagram.com/pantaoo" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 01-1.38-.9 3.72 3.72 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 4.54a5.3 5.3 0 100 10.6 5.3 5.3 0 000-10.6zm0 8.98a3.68 3.68 0 110-7.36 3.68 3.68 0 010 7.36zm5.5-9.2a1.24 1.24 0 110 2.48 1.24 1.24 0 010-2.48z"/></svg></a>
+        <a href="mailto:enricopantaleoni10@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+      </div>
+      <small>© <span id="year"></span> Enrico Pantaleoni · Le bottiglie Campari Soda sono marchio dei rispettivi proprietari.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

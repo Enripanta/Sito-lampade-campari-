@@ -1,0 +1,44 @@
+# Configurazione del pannello Pages CMS (https://pagescms.org)
+# Definisce cosa puoi modificare dal pannello: l'elenco delle lampade e le foto.
+
+media:
+  input: images          # cartella dove vengono caricate le foto
+  output: images         # percorso scritto nei dati (resta relativo: images/...)
+
+content:
+  - name: lampade
+    label: Lampade
+    type: file
+    path: data/lamps.json
+    fields:
+      - name: lamps
+        label: Lampade
+        type: object
+        list: true
+        # ogni voce dell'elenco è una lampada
+        fields:
+          - name: name
+            label: Nome
+            type: string
+          - name: price
+            label: Prezzo (€)
+            type: number
+          - name: material
+            label: Descrizione (base / materiale)
+            type: string
+          - name: status
+            label: Stato
+            type: select
+            options:
+              values: [disponibile, venduto]
+            default: disponibile
+          - name: hidden
+            label: Nascondi dal sito
+            type: boolean
+            default: false
+          - name: image
+            label: Foto
+            type: image
+          - name: alt
+            label: Descrizione foto (per accessibilità)
+            type: string
