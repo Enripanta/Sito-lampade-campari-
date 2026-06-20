@@ -1,0 +1,13 @@
+{
+  "lamps": [
+    {
+      "name": "Prova ",
+      "price": 30,
+      "material": "Prova ",
+      "status": "disponibile",
+      "hidden": false,
+      "image": "images/3E2B1587-F48A-4EC7-B2ED-3119CCD05AF6.jpeg",
+      "alt": "Gatto pazzo"
+    }
+  ]
+}
