@@ -20,6 +20,9 @@ content:
           - name: name
             label: Nome
             type: string
+          - name: code
+            label: Codice inventario (privato — non si vede sul sito, appare solo nel messaggio WhatsApp)
+            type: string
           - name: price
             label: Prezzo (€)
             type: number

@@ -11,8 +11,11 @@ const CONFIG = {
 };
 
 /* --- Link WhatsApp precompilato per una lampada --- */
-function waLink(lampName) {
-  const msg = `Ciao Enrico! Sono interessato/a alla lampada "${lampName}". È ancora disponibile?`;
+/* Il codice inventario (lamp.code) NON è mostrato sul sito: compare solo qui,
+   nel messaggio precompilato, così Enrico riconosce subito il modello. */
+function waLink(lamp) {
+  const code = lamp.code ? ` (codice ${lamp.code})` : "";
+  const msg = `Ciao Enrico! Vorrei sapere se è disponibile la lampada "${lamp.name}"${code}.`;
   return `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(msg)}`;
 }
 
@@ -80,7 +83,7 @@ function renderGrid() {
           ${formatPrice(l.price)}
           ${sold
             ? `<span class="btn btn-wa">Non disponibile</span>`
-            : `<a class="btn btn-primary btn-wa" href="${waLink(l.name)}" target="_blank" rel="noopener"
+            : `<a class="btn btn-primary btn-wa" href="${waLink(l)}" target="_blank" rel="noopener"
                  aria-label="Richiedi la lampada ${l.name} su WhatsApp">
                  ${waIcon()} Richiedi
                </a>`}
