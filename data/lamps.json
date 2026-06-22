@@ -13,6 +13,17 @@
         "images/IMG_0016.jpeg"
       ],
       "alt": "lampada da tavolo artigianale con paralume di bottiglie e luce rossa, base in acciaio color bronzo"
+    },
+    {
+      "name": "Lampada ",
+      "status": "disponibile",
+      "hidden": false,
+      "images": [
+        "images/IMG_0110.jpeg",
+        "images/IMG_0111.jpeg",
+        "images/IMG_0112.jpeg"
+      ],
+      "alt": "Lampada con base Ikea,"
     }
   ]
 }
