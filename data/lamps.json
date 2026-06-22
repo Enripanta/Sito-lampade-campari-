@@ -15,7 +15,10 @@
       "alt": "lampada da tavolo artigianale con paralume di bottiglie e luce rossa, base in acciaio color bronzo"
     },
     {
-      "name": "Lampada ",
+      "name": "Lampada base Ikea ",
+      "code": "29",
+      "price": 35,
+      "material": "Lampada con base Ikea con pulsante On/Off sullo stelo",
       "status": "disponibile",
       "hidden": false,
       "images": [
