@@ -17,6 +17,17 @@
       "status": "disponibile",
       "hidden": true,
       "alt": "Lampada con base Ikea,"
+    },
+    {
+      "name": "Lampada bassa con base in ceramica ",
+      "price": 30,
+      "status": "disponibile",
+      "hidden": false,
+      "images": [
+        "images/IMG_0098.jpeg",
+        "images/IMG_0097-1.jpeg",
+        "images/IMG_0099-1.jpeg"
+      ]
     }
   ]
 }
